@@ -103,6 +103,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+figure {
+	margin: 0 0 3rem 0;
+}
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
