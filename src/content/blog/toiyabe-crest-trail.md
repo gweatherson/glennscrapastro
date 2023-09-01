@@ -5,4 +5,4 @@ pubDate: 'August 28 2023'
 heroImage: ''
 ---
 
-ok
+![yo](./01.jpg)
