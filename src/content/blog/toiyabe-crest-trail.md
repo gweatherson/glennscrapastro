@@ -5,4 +5,4 @@ pubDate: 'August 28 2023'
 heroImage: ''
 ---
 
-![sample caption](../../assets/toiyabe-crest-trail/01.jpg)
+![sample caption](../../assets/01.jpg)
