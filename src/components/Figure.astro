@@ -2,4 +2,14 @@
 const { src, caption } = Astro.props;
 ---
 
-<figure>![{caption}]({src})<figcaption>{caption}</figcaption></figure>
+standard html:
+<figure>
+  <img src={src} alt={caption}>
+  <figcaption>{caption}</figcaption>
+</figure>
+
+astro syntax mixed into standard html:
+<figure>
+  ![{caption}]({src})
+  <figcaption>{caption}</figcaption>
+</figure>
