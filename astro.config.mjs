@@ -7,4 +7,6 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://glennscrap.com',
 	integrations: [mdx(), sitemap()],
+  output: 'static',
+  adapter: vercelStatic(),
 });
