@@ -136,12 +136,11 @@ hr {
 main {
 	width: calc(100% - 2em);
 	max-width: 100%;
-	margin: 0;
+	margin: 0 auto;
 }
 
 .title {
 	margin-bottom: 1em;
-	padding: 1em 0;
 	text-align: center;
 	line-height: 1;
 }
