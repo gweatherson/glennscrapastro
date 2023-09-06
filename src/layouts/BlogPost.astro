@@ -17,6 +17,10 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 			.prose {
 				width: 1400px;
 			}
+
+			footer {
+				text-align: center;
+			}
 		</style>
 	</head>
 
@@ -41,6 +45,11 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 					</div>
 					<slot />
 				</div>
+
+				<footer>
+					<a href="/">Go back home!</a>
+				</footer>
+
 			</article>
 		</main>
 		<Footer />
