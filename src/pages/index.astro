@@ -25,6 +25,8 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 				text-align: center;
 				gap: 2rem;
 				list-style-type: none;
+				flex-direction: column;
+				align-items: center;
 				margin: 0;
 				padding: 0;
 			}
@@ -34,11 +36,6 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 			ul li * {
 				text-decoration: none;
 				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
@@ -69,12 +66,6 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 				ul li {
 					width: 100%;
 					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
 				}
 			}
 		</style>
