@@ -31,21 +31,18 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 				padding: 0;
 			}
 			ul li {
-				width: calc(50% - 1rem);
+				margin-block-end: 1rem;
 			}
 			ul li * {
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
-			ul li img {
-				margin-bottom: 0.5rem;
-			}
 			ul li a {
 				display: block;
 			}
 			.title {
-				margin: 0;
-				color: rgb(var(--black));
+				margin: 0 0 0.5rem 0;
+				/* color: rgb(var(--black)); */
 				line-height: 1;
 			}
 			.date {

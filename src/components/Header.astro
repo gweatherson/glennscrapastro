@@ -1,6 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import Toggle from './Toggle.astro';
 ---
 
 <header>
@@ -8,6 +9,7 @@ import { SITE_TITLE } from '../consts';
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/about">About</HeaderLink>
+			<Toggle />
 		</div>
 	</nav>
 </header>
@@ -18,6 +20,16 @@ import { SITE_TITLE } from '../consts';
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
+
+	html.dark header {
+		background-color: black;
+		color: white;
+	}
+
+	html.dark header a {
+		color: white;
+	}
+
 	h2 {
 		margin: 0;
 		font-size: 1em;
@@ -41,5 +53,13 @@ import { SITE_TITLE } from '../consts';
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
+	}
+
+	html.dark nav a.active {
+		border-bottom-color: var(--accent-alt);
+	}
+
+	.internal-links {
+		display: flex;
 	}
 </style>

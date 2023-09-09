@@ -4,6 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import HomeIcon from '../components/HomeIcon.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -18,8 +19,21 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 				width: 1400px;
 			}
 
+			.title {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				flex-direction: row-reverse;
+			}
+
 			footer {
 				text-align: center;
+			}
+
+			.link-home {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 			}
 		</style>
 	</head>
@@ -41,13 +55,12 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
-						<hr />
 					</div>
 					<slot />
 				</div>
 
 				<footer>
-					<a href="/">Go back home!</a>
+					<a href="/" class="link-home"><HomeIcon /> go back home nerd</a>
 				</footer>
 
 			</article>
