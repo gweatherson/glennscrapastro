@@ -21,9 +21,15 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 
 			.title {
 				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			@media (min-width: 720px) {
+				.title {
 				justify-content: space-between;
 				align-items: flex-end;
 				flex-direction: row-reverse;
+			}
 			}
 
 			footer {
